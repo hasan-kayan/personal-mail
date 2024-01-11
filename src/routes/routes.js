@@ -8,7 +8,8 @@ const app = express();
 
 app.use(bodyParser.json());
 
-// Replace with your actual email credentials
+// Replace with your actual email credentials 
+// Separete this part into a config file it look discusting
 const transporter = nodemailer.createTransport({
   service: 'gmail',
   auth: {
